@@ -27,7 +27,7 @@ class Rectangle {
   }
 
   /**
-   * Method to calculate the area of the rectangle
+   * Method to calculate and return the area of the rectangle
    * @returns {number} The area of the rectangle
    */
   getArea() {
@@ -35,22 +35,22 @@ class Rectangle {
   }
 }
 
-// Square class extends Rectangle
+// Square class
 class Square extends Rectangle {
   /**
    * Constructor method
-   * @param {number} side - The side length of the square
+   * @param {number} side - The side of the square
    */
   constructor(side) {
-    super(side, side); // Call Rectangle constructor with side as both width and height
+    super(side, side);
   }
 
   /**
-   * Method to calculate the perimeter of the square
+   * Method to calculate and return the perimeter of the square
    * @returns {number} The perimeter of the square
    */
   getPerimeter() {
-    return 4 * this.width; // Since all sides are equal, 4 times the width is the perimeter
+    return 4 * this.width;
   }
 }
 
